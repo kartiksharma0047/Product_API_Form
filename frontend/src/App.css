@@ -1,0 +1,191 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.FormPage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.FormDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(98, 98, 98);
+}
+.FormDiv form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: aliceblue;
+  width: 60%;
+  height: 70%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.ChildFormDiv {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.EachInputDiv {
+  position: relative;
+}
+.ChildFormDiv .FormErrorDisplay {
+  color: red;
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  font-size: 14px;
+}
+.ImageError {
+  left: 60px !important;
+}
+.ChildFormDiv input,
+.ChildFormDiv textarea {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+}
+.ChildFormDiv textarea {
+  padding-top: 7px;
+}
+.ProductPrice {
+  position: relative;
+}
+.ProductPrice input {
+  padding-left: 65px;
+}
+.ProductPrice select {
+  position: absolute;
+  left: 0px;
+  height: 30px;
+  border: 1px solid #767676;
+  border-right: 1px dashed #767676;
+}
+.ImageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+.ImageDiv input {
+  width: 175px;
+  height: 22px;
+  padding-left: 0px;
+}
+.ImageDiv svg {
+  font-size: 20px;
+}
+.TagDiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.TagDiv input {
+  width: 200px;
+  border: 1px solid #767676;
+  border-right: none;
+}
+.TagDiv button {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #767676;
+  border-left: none;
+  background-color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+}
+.TagDiv .fa-circle-exclamation {
+  position: absolute;
+  left: -20px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.TagDiv .fa-trash {
+  position: absolute;
+  cursor: pointer;
+  color: red;
+  right: 55px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.TagList {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+.TagList option {
+  display: block;
+}
+.SubmitBtn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+}
+.Popup div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  height: 70%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.FormBlur{
+  filter: blur(10px);
+}
+.Popup div p{
+  font-size: 30px;
+  padding-top: 70px;
+}
+.OP-spokes-rli-bounding-box{
+  transform: scale(1.5);
+}
+.fa-check,.fa-xmark{
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+.fa-check{
+  color: green;
+  border-color: green;
+}
+.fa-xmark{
+  color: red;
+  border-color: red;
+}

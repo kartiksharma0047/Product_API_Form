@@ -76,7 +76,7 @@ function App() {
           productImage: url,
         };
   
-        fetch("http://localhost:5000/SubmitData", {
+        fetch("https://product-api-form.onrender.com/SubmitData", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
